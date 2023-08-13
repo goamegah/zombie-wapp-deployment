@@ -68,5 +68,12 @@ ssh -i $SSH_KEY ec2-user@$INSTANCE_IP # connect to the aws ec2 instance AMI and 
 Once you're connected to instance prompt, we'll clone our project from github
 
 ```bash
-git clone addr/to/git/project/repository/
+git clone https://github.com/godamg/zombie-wapp-deployment.git
 ```
+
+Then launch docker compose command in order to build and run container.
+
+<img src="figures/movingtoproject.png" alt="aws-ubuntu-server-instance" style="zoom:33%;" />
+
+<img src="figures/launch-container.png" alt="aws-ubuntu-server-instance" style="zoom:33%;" />
+
