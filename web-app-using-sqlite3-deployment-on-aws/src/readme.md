@@ -44,8 +44,10 @@ After setting up Dockerfile, we'll build image from above script.
 $ docker build -t za-php-backend-img .
 
 # docker run -it --rm --name <container name> <image name> 
-$ docker run -it --rm --name za-php-backend-ctnr za-php-backend-img
+$ docker run -it --rm -p 8000:8000 --name za-php-backend-ctnr za-php-backend-img
 ```
+
+***Note:*** Instruction ```-p xxxx:yyyy``` means we wanted to map host port 8000 to container port 8000. 
 
 ## Launch AWS ubuntu server instance
 
@@ -55,7 +57,7 @@ You can choose one of ubuntu-server aws instance.
 
 <img src="figures/aws-ubuntu-server-ami.png" alt="aws-ubuntu-server-instance" style="zoom:33%;" />
 
-To connect to your EC2 instance prompt using peace of code below:
+To connect to your EC2 instance prompt, you can use peace of code below:
 
 ```bash 
 SSH_KEY=path/to/your/ec2-permission-key/ec2-key.pem # the file path you downloaded the key
