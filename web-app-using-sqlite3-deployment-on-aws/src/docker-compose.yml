@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  backend-php-container-zoapp:    # nom qu'on attribut au conteneur
-    build: .  # command pour créer l'image et le lancer
-    ports:    # mappping du port du host au port du conteneur
+  backend-php-container:
+    build: .  
+    ports:
       - "8000:8000"

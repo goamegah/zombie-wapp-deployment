@@ -5,8 +5,8 @@
 4. [Structure](#structure)
 5. [Installation](#installation)
 6. [Architecture](#architecture)
-7. [Base de donnée](#base de données)
-8. [Requête AJAX](#requête AJAX)
+7. [Base de donnée](#base-de-donnée)
+8. [Requête AJAX](#requête-ajax)
 
 
 ## General Info
@@ -149,14 +149,13 @@ Pour consulter une recette l'utilisateur devraa cliquer sur le bouton
 Une fenetre modal s'ouvrira _sans rechargement de la page_ avec la description , l'auteur , et le titre  
 de la recette.
 
-Pour ce faire chaque recette correspond dans l'ordre à une information 
-dans la **BDD**. L' **extraction** de ces informations ce fait grâce à un un fichier intermédiaire
+Pour ce faire chaque recette correspond dans l'ordre à une information  dans la **BDD**. L' **extraction** de ces informations ce fait grâce à un un fichier intermédiaire
 ***meal.php***, ensuite une requête **AJAX** est appliquer via le fichier ***recette.js***, sur ce fichier
 pour récupérer les données. Les données ainsi récupérer seront insérer dans la page 
 dans des conteneurs _HTML_ présentes dans le fichier ***index.php***.
 
-Vous l'aurez peut être deviner, mais chacun des conteneurs porte des attributs
-qui permettent de les identifier le (**data-id**). Cet identifiant permet recupérer de manière précise
+Vous l'aurez peut être deviné, mais chacun des conteneurs porte des attributs
+qui permettent de les identifier le (**data-id**). Cet identifiant permet de recupérer de manière précise
 une ligne portant le même **id** dans la **BDD**.
 
 
