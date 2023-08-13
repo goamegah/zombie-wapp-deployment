@@ -1,0 +1,32 @@
+.formulaire{
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+form{
+    width: 80%;
+}
+form div{
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    margin-bottom: 20px;
+}
+
+
+         /*---------@media screen---------
+                RESPONSIVE DESIGN       */
+
+/* Media Queries*/
+
+@media screen and (min-width: 320px){
+
+   
+    
+}
+@media screen and (min-width: 768px){
+
+    
+}

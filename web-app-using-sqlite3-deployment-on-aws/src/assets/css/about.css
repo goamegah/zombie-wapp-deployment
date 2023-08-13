@@ -1,0 +1,43 @@
+#about {
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.row {
+    /*position: relative;*/
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-text {
+    color: #0B8B9F;
+}
+
+.imgBx {
+    display: none;
+    width: 50%;
+    margin-left: 100px;
+}
+
+.col50 {
+    margin-left: 15%;
+}
+
+.col50 p {
+    font-size: 18px;
+    max-width: 400px;
+}
+
+@media screen and (min-width: 800px) {
+    .imgBx {
+        display: block;
+    }
+    .about {
+        padding: 100px;
+    }
+    .col50 p {
+        font-size: 18px;
+        max-width: 700px;
+    }
+}

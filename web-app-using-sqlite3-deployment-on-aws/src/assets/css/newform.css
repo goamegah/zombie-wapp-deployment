@@ -1,0 +1,50 @@
+#add {
+    background-color: aliceblue;
+    padding: 10px 10Px 10px 10px;
+}
+
+#add h1 {
+    color: hsl(188, 87%, 33%);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#add input,
+#add textarea {
+    padding: 15px;
+    border-radius: 12px;
+}
+
+
+#add input.error, #add textarea.error{
+    border-color: #ff0000;
+    border-radius: 12px;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+#add label.error{
+    color: red;
+}
+
+#add .form-container {
+    width: 50vw;
+    margin: auto;
+}
+
+#add .form-item {
+    display: grid;
+    padding-top: 15px;
+}
+
+#add button{
+    width: 70%;
+    /*position: relative;*/
+    left: 15%;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 15px;
+    background-color: #95d7e8;
+}
+#add p{
+    display: none;
+}
