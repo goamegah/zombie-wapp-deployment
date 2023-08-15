@@ -1,0 +1,4 @@
+SSH_KEY=~/Documents/tmp-ress-needs/Formation-aws/aws-keys/ec2-tuto.pem # the file path you downloaded the key
+INSTANCE_IP=54.237.239.106 # find your IP address in the EC2 console under the Instances tab
+chmod 400 $SSH_KEY # or ssh will complain that the key has the wrong permissions
+ssh -i $SSH_KEY ec2-user@$INSTANCE_IP # connect to the aws ec2 instance AMI and the your private IP address
